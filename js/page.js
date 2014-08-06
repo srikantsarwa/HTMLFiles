@@ -10,10 +10,6 @@ $(function() {
         query.read().then(function (todoItems) {
             var listItems = $.map(todoItems, function (item) {
                 return $('<li>')
-                    .attr('data-todoitem-id', item.id)
-                    .append($('<button class="item-delete">Delete</button>'))
-                    .append($('<input type="checkbox" class="item-complete">').prop('checked', item.complete))
-                    .append($('<div>').append($('<input class="item-text">').val(item.text)));
             });
             $('#todo-items').empty().append(listItems).toggle(listItems.length > 0);
             $('#summary').html('<strong>' + todoItems.length + '</strong> item(s)');
@@ -88,5 +84,5 @@ $(function() {
     });
 
     // On initial load, start by fetching the current data
-    refreshTodoItems();
+    //refreshTodoItems();
 });

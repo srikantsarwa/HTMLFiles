@@ -145,26 +145,19 @@
 				<div class="col-md-9 col-xs-12 forma">
 					
                     <form id='add-item'>
-                        <div>
-                            <input type="text" class="col-md-6 col-xs-12 name" id='new-name-text' name='name' placeholder='Name *' />
-                            <input type="text" class="col-md-6 col-xs-12 Ocassion" id='new-ocassion-text' name='Ocassion' placeholder='Ocassion *' />
-                            <input type="date" class="col-md-12 col-xs-12 Date" id='new-date-text' name='Date' placeholder='Date' />
-                            <input type="text" class="col-md-6 col-xs-12 Message" id='new-message-text' name='Message' placeholder='Message *' />
-                            <input type="tel" class="col-md-6 col-xs-12 phone" id='new-phone-text' name='phone' placeholder='Phone *' />
-                            <input type="email" class="col-md-12 col-xs-12 Email" id='new-email-text' name='Email' placeholder='Email *' />
-                            <button type="submit" class="fa fa-share">Submit</button>
+                        <div class="cBtn col-xs-12">
+                            <input type="text" id='new-name-text' name='name' placeholder='Name *' />
+                            <input type="text" id='new-ocassion-text' name='Ocassion' placeholder='Ocassion *' />
+                            <input type="date" id='new-date-text' name='Date' placeholder='Date' />
+                            <input type="text" id='new-message-text' name='Message' placeholder='Message *' />
+                            <input type="tel" id='new-phone-text' name='phone' placeholder='Phone *' />
+                            <input type="email" id='new-email-text' name='Email' placeholder='Email *' />
+                            <button class="clear" type="submit">Send Message</button>
+                            <button class="clear" type="reset">Clear Form</button>
                         </div>
                         
                     </form>
-                    
-                    <!--<form>
-						<div class="cBtn col-xs-12">
-							<ul>
-								<li class="clear"><a href="#"><i class="fa fa-times"></i>Clear Form</a></li>
-								<li class="send"><a href="#"><i class="fa fa-share"></i>Send Message</a></li>
-							</ul>
-						</div>
-					</form>-->
+
 				</div>
 				<div class="col-md-3 col-xs-12 cont">
 					<ul>
@@ -177,22 +170,11 @@
 				</div>
 			</div>
 		</div>
-		<!--<div class="container">
-			<div class="row ftext">
-				<div class="col-md-12">
-				<a id="features"></a>
-				<h3>We Care About you and technology together!</h3>
-				<p>The Mobile applications are coming soon</p>
-				</div>
-			</div>
-		</div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 centPic">
-                    <img class="img-responsive" src="images/phone-lockup-2.png" />
-                </div>
-            </div>
-        </div>-->
+        <div>
+            <iframe name='iframe1' id='iframe1' src="http://www.mypanchang.com/mobilewidget.php?cityname=Hyderabad-AP-India&color=452603&displaymode=full" scrolling="no" width="190" height="460" frameborder="1" style="border:none;" allowtransparency="true"></iframe>
+            <iframe name='iframe2' id='iframe2' src="http://www.mypanchang.com/mobilehorawidget.php?cityname=Hyderabad-AP-India&color=452603" scrolling="no" width="150px" height="450px" frameborder="0" style="border:none;" allowtransparency="true"></iframe>
+            <iframe name='iframe4' id='iframe4' src="http://www.mypanchang.com/jatakam/kundliwidget.php" scrolling="no" width="360" height="250" frameborder="1" style="border:groove;" allowtransparency="true"></iframe>
+        </div>
 		<div class="line7">
 			<div class="container">
 				<div class="row footer">
@@ -201,7 +183,8 @@
 						<p>Please leave a feedback/suggestions to help you serve better!!!</p>
 						<div class="fr">
 						<div style="display: inline-block;">
-							<input class="col-md-6 fEmail" name='Email' placeholder='Enter Your Email'/>
+                            <textarea type="text" class="col-md-12 col-xs-12 Message" name='Feedback' placeholder='Please enter your feedback'></textarea>
+                            <!--<input class="col-md-6 fEmail" name='Email' placeholder='Enter Your Email'/>-->
 							<a href="#" class="subS">Subscribe!</a>
 						</div>
 						</div>
